@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
 import Todos from '../views/Todos.vue'
+import Todo from '../views/Todo.vue'
 
 const history = createWebHistory()
 
@@ -11,7 +12,10 @@ const routes = [
     name: 'home',
   },
   {
-    // erweitern
+    path: '/:id',
+    component: Todo,
+    name: 'todo',
+    props: true,
   }
 ]
 
