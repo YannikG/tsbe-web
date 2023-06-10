@@ -45,8 +45,8 @@ export const useAppStore = defineStore('app', {
     },
     updateTodo(id, content) {
       const todoIndex = this._findTodoIndexById(id)
-
-      this.todos[todoIndex].content = content
+      if (this.todos[todoIndex])
+        this.todos[todoIndex].content = content
     },
     deleteTodo(id) {
       const todoIndex = this._findTodoIndexById(id)
