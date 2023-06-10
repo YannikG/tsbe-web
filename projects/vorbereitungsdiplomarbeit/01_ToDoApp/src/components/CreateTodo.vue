@@ -20,6 +20,7 @@ export default defineComponent({
 
     const addTodo = () => {
       store.createNewTodo(newTodo.value);
+      store.showAlert("Todo wurde erfolgreich hinzugefügt.");
       newTodo.value = '';
     }
 

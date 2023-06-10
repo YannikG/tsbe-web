@@ -1,5 +1,6 @@
 <template>
-  <CreateTodo class="pt-5" />
+  <Alert class="mt-5" />
+  <CreateTodo class="pt-5"  />
   <ListTodos/>
 </template>
 
